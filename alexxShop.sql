@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Янв 03 2018 г., 17:24
+-- Время создания: Янв 28 2018 г., 22:00
 -- Версия сервера: 5.5.53
 -- Версия PHP: 5.5.38
 
@@ -68,7 +68,8 @@ CREATE TABLE `Carts` (
 INSERT INTO `Carts` (`id`, `userid`, `itemid`, `datain`, `price`, `orderid`) VALUES
 (7, 2, 2, '2018-01-03 17:04:24', 35000, 1),
 (8, 3, 5, '2018-01-03 17:04:46', 1300, 2),
-(11, 3, 2, '2018-01-03 17:05:01', 35000, 2);
+(11, 3, 2, '2018-01-03 17:05:01', 35000, 2),
+(13, 1, 4, '2018-01-08 12:42:08', 1000, 3);
 
 -- --------------------------------------------------------
 
@@ -191,7 +192,7 @@ CREATE TABLE `Users` (
 
 INSERT INTO `Users` (`id`, `login`, `pass`, `roleid`, `discount`, `total`, `imagepath`, `email`) VALUES
 (1, 'user', '827ccb0eea8a706c4c34a16891f84e7b', 1, 0, 0, 'images/avatar/user.anonym.jpg', 'test@test.ru'),
-(2, 'admin', '827ccb0eea8a706c4c34a16891f84e7b', 2, 5, 0, 'images/avatar/admin.Jellyfish.jpg', ' User@user.ru '),
+(2, 'admin', '827ccb0eea8a706c4c34a16891f84e7b', 2, 5, 0, 'images/avatar/admin.anonym.jpg', ' User@user.ru '),
 (3, 'user1', '827ccb0eea8a706c4c34a16891f84e7b', 3, 10, 0, 'images/avatar/user1.Koala.jpg', ' test@test.ru ');
 
 --
@@ -267,7 +268,7 @@ ALTER TABLE `Arhives`
 -- AUTO_INCREMENT для таблицы `Carts`
 --
 ALTER TABLE `Carts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT для таблицы `Categories`
 --

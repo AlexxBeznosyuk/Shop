@@ -1,0 +1,64 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+.header {
+	height: 150px;
+	background: #FCCFD9;
+}
+.main {
+	background:#D9E4F6;
+}
+.adm {
+	background:#CBF7CD;
+}
+.photo {
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+}
+.iprice {
+	color: red;
+	font-family: Verdana;
+	font-size: 16px;
+	font-weight: bold;
+}
+.infotop {
+	position: relative;
+	margin: 10px 20px;
+	padding-top: 40px;
+	width: 100%;
+}
+.infotop::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+.iteminfo img {
+	width: 35%;
+	background-size: contain;
+	border-radius: 20px;
+	margin: 10px;
+	border: 2px solid #ADA6A6;
+}
+.rate {
+	position: absolute;
+	top: 10px;
+	font-size: 20px;
+	left: 30%;
+}
+.price {
+	position: absolute;
+	color: red;
+	font-size: 25px;
+	top: 10px;
+	left: 5%;
+}
+.iteminfo p {
+	width: 55%;
+	padding: 15px;
+}
+td>input,
+td>select {
+	width: 75px !important;
+}
